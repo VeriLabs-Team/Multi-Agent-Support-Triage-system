@@ -1,0 +1,4 @@
+order_id,customer_id,order_status,order_purchase_timestamp,order_approved_at,order_delivered_timestamp,order_estimated_delivery_date
+1001,cust_001,delivered,2025-10-29 10:00:00,2025-10-29 10:05:00,2025-10-30 14:00:00,2025-11-05 00:00:00
+1002,cust_002,shipped,2025-11-01 11:30:00,2025-11-01 11:35:00,,2025-11-07 00:00:00
+1003,cust_003,processing,2025-11-04 09:00:00,,,2025-11-10 00:00:00

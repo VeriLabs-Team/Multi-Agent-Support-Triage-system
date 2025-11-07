@@ -1,0 +1,4 @@
+order_id,customer_id,payment_type,payment_installments,payment_value,charge_status
+1001,cust_001,credit_card,1,1499.99,Paid
+1002,cust_002,paypal,1,899.50,Paid
+1003,cust_003,debit_card,1,350.00,Pending
