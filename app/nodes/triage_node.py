@@ -7,6 +7,8 @@ def triage_agent(state: TriageState) -> dict:
 
     text = state["raw_text"]
 
-    response =client.invoke(TRIAGE_PROMPT.format(raw_text=text))
+    chain = TRIAGE_PROMPT | client
+    
+    response =chain.invoke(TRIAGE_PROMPT.format(raw_text=text))
 
     return {"intent": response.content}
