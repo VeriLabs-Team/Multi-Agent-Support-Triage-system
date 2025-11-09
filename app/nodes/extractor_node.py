@@ -7,11 +7,12 @@ class SchemaForExtraction(BaseModel):
     intent: str
 
 def extractor_agent(state: TriageState) -> dict:
-
-    client = get_llm_client().with_structured_output(SchemaForExtraction)
-
+    client = get_llm_client()
+    
     text = state["raw_text"]
-
-    response = client.invoke(EXTRACTOR_PROMPT.format(raw_text=text))
-
-    return {"extracted_data": response.model_dump()}    #didnt use response.dict() because thats in pydantic v1 not v2
+    
+    chain = EXTRACTOR_PROMPT | client.with_structured_output(SchemaForExtraction)
+    
+    response = chain.invoke({"raw_text": text})
+    
+    return {"extracted_data": response.model_dump()}
