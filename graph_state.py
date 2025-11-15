@@ -12,5 +12,5 @@ class TriageState(TypedDict):
     # Enrichment
     enrichment: Optional[Dict[str, Any]] # Data from our mock DBs (e.g., {"status": "Shipped"})
     # Output
-    draft_reply: Optional[str] # The suggested reply for the human
+    final_customer_reply: Optional[str] # The suggested reply for the human
     final_output: Optional[Dict[str, Any]] # The final, clean JSON for the API

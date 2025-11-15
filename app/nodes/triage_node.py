@@ -1,6 +1,6 @@
 from graph_state import TriageState
-from llm.clients import get_llm_client
-from llm.prompts import TRIAGE_PROMPT
+from ..llm.clients import get_llm_client
+from ..llm.prompts import TRIAGE_PROMPT
 
 def triage_agent(state: TriageState) -> dict:
     client = get_llm_client()

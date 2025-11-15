@@ -1,4 +1,91 @@
-order_id,customer_id,order_status,order_purchase_timestamp,order_approved_at,order_delivered_timestamp,order_estimated_delivery_date
-1001,cust_001,delivered,2025-10-29 10:00:00,2025-10-29 10:05:00,2025-10-30 14:00:00,2025-11-05 00:00:00
-1002,cust_002,shipped,2025-11-01 11:30:00,2025-11-01 11:35:00,,2025-11-07 00:00:00
-1003,cust_003,processing,2025-11-04 09:00:00,,,2025-11-10 00:00:00
+order_id,customer_email,status,shipped_date,item
+1001,alice@example.com,Shipped,2025-10-30,Quantum Laptop
+1002,bob@web.com,Pending,N/A,Ergo-Mech Keyboard
+1003,charlie@domain.com,Shipped,2025-10-28,4K Webcam
+1004,alice@example.com,Returned,2025-10-25,Wireless Mouse
+1005,dave@mail.com,Pending,N/A,Noise-Cancelling Headphones
+1006,eve@test.com,Shipped,2025-10-31,Docking Station
+1007,bob@web.com,Shipped,2025-10-29,USB-C Hub
+1008,grace@internet.com,Pending,N/A,Monitor Stand
+1009,alice@example.com,Shipped,2025-11-01,External SSD (1TB)
+1010,oscar@mail.com,Shipped,2025-11-01,VR Headset
+1011,charlie@domain.com,Cancelled,2025-11-02,Laptop Stand
+1012,eve@test.com,Pending,N/A,Green Screen
+1013,bob@web.com,Shipped,2025-11-02,Mechanical Keyboard
+1014,nina@web.com,Pending,N/A,Ring Light
+1015,dave@mail.com,Shipped,2025-11-03,Portable Monitor
+1016,grace@internet.com,Returned,2025-11-01,Smartwatch
+1017,alice@example.com,Pending,N/A,Microphone
+1018,oscar@mail.com,Shipped,2025-11-04,Gaming Mouse
+1019,charlie@domain.com,Shipped,2025-11-04,Power Bank
+1020,eve@test.com,Cancelled,2025-11-05,Standing Desk Mat
+1021,alice@example.com,Shipped,2025-11-05,4K Monitor
+1022,bob@web.com,Shipped,2025-11-05,Ergonomic Chair
+1023,charlie@domain.com,Shipped,2025-11-05,Bluetooth Speaker
+1024,dave@mail.com,Shipped,2025-11-06,Smart Thermostat
+1025,eve@test.com,Shipped,2025-11-06,Air Fryer
+1026,grace@internet.com,Shipped,2025-11-06,Robot Vacuum
+1027,oscar@mail.com,Shipped,2025-11-07,Espresso Machine
+1028,nina@web.com,Shipped,2025-11-07,Blender
+1029,alice@example.com,Shipped,2025-11-07,Electric Kettle
+1030,bob@web.com,Shipped,2025-11-07,Smart Lock
+1031,charlie@domain.com,Shipped,2025-11-08,Security Camera
+1032,dave@mail.com,Shipped,2025-11-08,Fitness Tracker
+1033,eve@test.com,Shipped,2025-11-08,Yoga Mat
+1034,grace@internet.com,Shipped,2025-11-09,Dumbbell Set
+1035,oscar@mail.com,Shipped,2025-11-09,Treadmill
+1036,nina@web.com,Shipped,2025-11-09,Running Shoes
+1037,alice@example.com,Shipped,2025-11-10,Bookshelf
+1038,bob@web.com,Shipped,2025-11-10,Desk Lamp
+1039,charlie@domain.com,Shipped,2025-11-10,Office Chair
+1040,dave@mail.com,Shipped,2025-11-10,Filing Cabinet
+1041,eve@test.com,Shipped,2025-11-11,Whiteboard
+1042,grace@internet.com,Shipped,2025-11-11,Pen Tablet
+1043,oscar@mail.com,Shipped,2025-11-11,3D Printer
+1044,nina@web.com,Shipped,2025-11-12,Action Camera
+1045,alice@example.com,Shipped,2025-11-12,Drone
+1046,bob@web.com,Shipped,2025-11-12,Backpack
+1047,charlie@domain.com,Shipped,2025-11-13,Travel Pillow
+1048,dave@mail.com,Shipped,2025-11-13,Luggage Set
+1049,eve@test.com,Shipped,2025-11-13,Passport Holder
+1050,grace@internet.com,Shipped,2025-11-13,Travel Adapter
+1051,oscar@mail.com,Shipped,2025-11-14,External Hard Drive
+1052,nina@web.com,Shipped,2025-11-14,Router
+1053,alice@example.com,Shipped,2025-11-14,Mesh Wi-Fi System
+1054,bob@web.com,Shipped,2025-11-15,NAS Enclosure
+1055,charlie@domain.com,Shipped,2025-11-15,Ethernet Cables
+1056,dave@mail.com,Shipped,2025-11-15,Surge Protector
+1057,eve@test.com,Shipped,2025-11-16,UPS Battery Backup
+1058,grace@internet.com,Shipped,2025-11-16,Monitor Arm
+1059,oscar@mail.com,Shipped,2025-11-16,Laptop Cooling Pad
+1060,nina@web.com,Shipped,2025-11-17,Cable Management Box
+1061,alice@example.com,Shipped,2025-11-17,Smart Light Bulbs
+1062,bob@web.com,Shipped,2025-11-17,Smart Plug
+1063,charlie@domain.com,Shipped,2025-11-18,Smart Speaker
+1064,dave@mail.com,Shipped,2025-11-18,Smart Display
+1065,eve@test.com,Shipped,2025-11-18,Streaming Stick
+1066,grace@internet.com,Shipped,2025-11-19,TV Soundbar
+1067,oscar@mail.com,Shipped,2025-11-19,Universal Remote
+1068,nina@web.com,Shipped,2025-11-19,Projector
+1069,alice@example.com,Shipped,2025-11-20,Projector Screen
+1070,bob@web.com,Shipped,2025-1Toaster Oven
+1081,eve@test.com,Shipped,2025-11-24,Microwave
+1082,grace@internet.com,Shipped,2025-11-24,Cookware Set
+1083,oscar@mail.com,Shipped,2025-11-24,Knife Set
+1084,nina@web.com,Shipped,2025-11-25,Cutting Board
+1085,alice@example.com,Shipped,2025-11-25,Food Storage Containers
+1086,bob@web.com,Shipped,2025-11-25,Slow Cooker
+1087,charlie@domain.com,Shipped,2025-11-26,Pressure Cooker
+1088,dave@mail.com,Shipped,2025-11-26,Rice Cooker
+1089,eve@test.com,Shipped,2025-11-26,Waffle Maker
+1090,grace@internet.com,Shipped,2025-11-27,Bread Maker
+1091,oscar@mail.com,Shipped,2025-11-27,Ice Cream Maker
+1092,nina@web.com,Shipped,2025-11-27,Vacuum Sealer
+1093,alice@example.com,Shipped,2025-11-28,Sous Vide Cooker
+1094,bob@web.com,Shipped,2025-11-28,Wine Opener
+1095,charlie@domain.com,Shipped,2025-11-28,Cocktail Shaker Set
+1096,dave@mail.com,Shipped,2025-11-29,Whiskey Decanter
+1097,eve@test.com,Shipped,2025-11-29,Wine Glasses
+1098,grace@internet.com,Shipped,2025-11-29,Beer Glasses
+1099,oscar@mail.com,Shipped,2025-11-30,Coasters
+1100,nina@web.com,Shipped,2025-11-30,Bar Cart
