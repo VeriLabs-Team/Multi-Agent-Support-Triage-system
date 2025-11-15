@@ -1,12 +1,13 @@
 from graph_state import TriageState
-from llm.clients import get_llm_client
-from llm.prompts import EXTRACTOR_PROMPT
+from ..llm.clients import get_llm_client
+from ..llm.prompts import EXTRACTOR_PROMPT
 from pydantic import BaseModel
+from typing import Optional
 
 class SchemaForExtraction(BaseModel):
-    order_id: str 
-    customer_email: str 
-    item_name: str 
+    order_id: Optional[str] = None
+    customer_email: Optional[str] = None
+    item_name: Optional[str] = None
 
 def extractor_agent(state: TriageState) -> dict:
     client = get_llm_client()

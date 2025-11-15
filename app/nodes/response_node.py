@@ -1,6 +1,6 @@
 from graph_state import TriageState
-from llm.clients import get_llm_client
-from llm.prompts import RESPONSE_PROMPT
+from ..llm.clients import get_llm_client
+from ..llm.prompts import RESPONSE_PROMPT
 
 def response_agent(state: TriageState) -> dict:
 
@@ -8,7 +8,12 @@ def response_agent(state: TriageState) -> dict:
 
     chain=RESPONSE_PROMPT | client
 
-    response =chain.invoke(RESPONSE_PROMPT.format(**state.model_dump()))    
+    prompt_values=state.copy()
+
+    if "enrichment" not in prompt_values or prompt_values["enrichment"] is None:
+        prompt_values["enrichment"] = "No additional context or enrichment was found."
+
+    response =chain.invoke(prompt_values)    
      
     return {"final_customer_reply": response.content}
 
