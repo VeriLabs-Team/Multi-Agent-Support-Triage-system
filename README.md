@@ -141,6 +141,10 @@ curl -X POST "http://127.0.0.1:8000/v1/process_ticket" \
 
 ---
 
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 ---
 <p align="center">
   Powered by <strong><a href="https://verilabs.io" target="_blank">VeriLabs</a></strong>
