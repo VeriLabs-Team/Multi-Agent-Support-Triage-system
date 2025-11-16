@@ -147,5 +147,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 <p align="center">
-  Powered by <strong><a href="https://verilabs.io" target="_blank">VeriLabs</a></strong>
+  Powered by <strong><a href="(https://github.com/VeriLabs-Team)" target="_blank">VeriLabs</a></strong>
 </p>
